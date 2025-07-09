@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { User } from '@/types';
 import { useUserStore } from '@/store/userStore';
-import { UserModal } from './UserModal';
-import { ConfirmDialog } from './ConfirmDialog';
+import { UserModal } from './modals/UserModal';
+import { ConfirmDialog } from './modals/ConfirmDialog';
 
 export const UserList = () => {
   const { users, deleteUser } = useUserStore();
