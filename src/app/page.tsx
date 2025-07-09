@@ -10,15 +10,6 @@ export default function Home() {
   const currentUserName = useUserStore(state => state.currentUserName);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    // Check if user name is already in sessionStorage
-    const savedUserName = sessionStorage.getItem('currentUserName');
-    if (savedUserName) {
-      useUserStore.getState().setCurrentUserName(savedUserName);
-    } else {
-      setIsModalOpen(true);
-    }
-  }, []);
 
   useEffect(() => {
     // Show modal if no current user name
