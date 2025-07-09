@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useUserStore } from '@/store/userStore';
-import { UserIdentificationModal } from '@/components/UserIdentificationModal';
+import { UserIdentificationModal } from '@/components/modals/UserIdentificationModal';
 import { UserList } from '@/components/UserList';
 import { ToastLayer } from '@/components/ToastLayer';
 
